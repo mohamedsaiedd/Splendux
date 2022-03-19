@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SPLENDUX | Home </title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="./splendux-logo-fav.png" type="image/gif" sizes="16x16">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+
+<body id="bodyme">
+	<canvas id="bg">
+	</canvas>
+
+
+	<!-- <div class="layer-white"></div> -->
+	<div class="site-logo"><a href="/">SPLENDUX</a></div>
+	<div class="navbar">
+		<div class="site-info">UI / UX</div>
+		<div class="site-menu">
+			<div class="menu-item disabeled">projects</div>
+			<div class="menu-item disabeled">about</div>
+			<div class="menu-item item1"><a href="mailto:info@splendux.com">contact</a></div>
+		</div>
+	</div>
+	<div class="social">
+		<div class="showreel1"><a href="https://www.facebook.com/splenduxconsulatant/">facbook</a></div>
+		<div class="showreel2"><a href="https://www.instagram.com/splend.ux/">instagram</a></div>
+		<div class="showreel3"><a href="https://www.linkedin.com/company/splendux">LINKEDIN</a></div>
+	</div>
+	<div class="container">
+		<div class="wrapper-img">
+			<div class="box"></div>
+			<!-- <div>
+					<img class="image" src="splendux-logo.png" />
+				</div> -->
+		</div>
+		<!-- <div class="circle-shape"></div>
+			<div class="circle-shape-2"></div>
+			<div class="circle-shape-3"></div>
+			<div class="blocks">
+				<div class="block-1 block">S</div>
+				<div class="block-2 block">P</div>
+				<div class="block-3 block">L</div>
+				<div class="block-4 block">E</div>
+				<div class="block-4-1 block">N</div>
+				<div class="block-5 block">D</div>
+				<div class="block-6 block">U</div>
+				<div class="block-7 block">X</div>
+			</div> -->
+
+	</div>
+	<div class="soundOff" id="soundOff"> play</div>
+	<div class="warrning">our website is underimplementation</div>
+
+
+	<script>
+		TweenMax.to(".block-1", 2, {
+			x: "-80",
+			y: "-100",
+			scale: "1.9",
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.to(".block-2", 2, {
+			x: "-180",
+			y: "200",
+			scale: "1.2",
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.to(".block-3", 2, {
+			x: "180",
+			y: "-240",
+			scale: "0.6",
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.to(".block-4", 2, {
+			x: "-40",
+			y: "140",
+			scale: "0.8",
+			ease: Expo.easeInOut,
+			scrub: 2
+		});
+		TweenMax.to(".block-5", 2, {
+			x: "280",
+			y: "240",
+			scale: "0.8",
+			ease: Expo.easeInOut,
+			scrub: 2
+
+
+		});
+		TweenMax.to(".block-6", 2, {
+			x: "80",
+			y: "-40",
+			scale: "1.4",
+			ease: Expo.easeInOut,
+			scrub: 2,
+
+		});
+		TweenMax.to(".block-4-1", 2, {
+			x: "180",
+			y: "140",
+			scale: "1",
+			ease: Expo.easeInOut,
+			scrub: 2,
+
+		});
+		TweenMax.to(".block-7", 2, {
+			x: "180",
+			y: "-140",
+			scale: "1.2",
+			ease: Expo.easeInOut,
+			scrub: 2,
+
+		});
+		TweenMax.to("#bg", 3, {
+			scale: "1.2",
+			opacity: 1,
+			ease: Expo.easeInOut,
+			scrub: 2,
+			delay: 1,
+
+		});
+
+		TweenMax.to(".box", 2.4, {
+			y: "-110%",
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.from(".circle-shape", 2.4, {
+			scale: "0",
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.from(".warrning", 2.4, {
+			x: "-100%",
+			opacity: 0,
+			ease: Expo.easeInOut,
+		});
+		TweenMax.from(".circle-shape-2", 2.4, {
+			scale: "0",
+			ease: Expo.easeInOut,
+		});
+		TweenMax.from(".soundOff", 2.4, {
+			y: "-100%",
+			opacity: 0,
+			ease: Expo.easeInOut,
+		});
+
+		TweenMax.from(".circle-shape-3", 2.4, {
+			scale: "0",
+			ease: Expo.easeInOut,
+		});
+		TweenMax.from(".navbar > div", 1.6, {
+			opacity: 0,
+			y: 60,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.from(".site-logo", 1.6, {
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.from(".showreel1", 1.6, {
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.from(".showreel2", 1.6, {
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.from(".layer-white", 2.6, {
+			opacity: 0,
+			width: 00,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.from(".showreel3", 1.6, {
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut,
+			delay: 0.6,
+		});
+		TweenMax.staggerFrom(
+			".site-menu > div",
+			1,
+			{
+				opacity: 0,
+				y: 60,
+				ease: Power2.easeOut,
+			},
+			0.2
+		);
+
+		// document.addEventListener('mousemove' , (e) => {
+		// 	document.querySelector(".block-1").style.top = e.pageY / 30 + "px";
+		// 	document.querySelector(".block-1").style.left = e.pageX / 30 + "px";
+		// 	document.querySelector(".block-2").style.top = e.pageY / 50 + "px";
+		// 	document.querySelector(".block-2").style.left = e.pageX / 50 + "px";
+		// 	document.querySelector(".block-3").style.top = e.pageY / 70 + "px";
+		// 	document.querySelector(".block-3").style.left = e.pageX / 70 + "px";
+		// 	document.querySelector(".block-4").style.top = e.pageY / 10 + "px";
+		// 	document.querySelector(".block-4-1").style.left = e.pageX / 10 + "px";
+		// 	document.querySelector(".block-4-1").style.top = e.pageY / 10 + "px";
+		// 	document.querySelector(".block-4").style.left = e.pageX / 10 + "px";
+		// 	document.querySelector(".block-5").style.top = e.pageY / 40 + "px";
+		// 	document.querySelector(".block-5").style.left = e.pageX / 40 + "px";
+		// 	document.querySelector(".block-6").style.top = e.pageY / 20 + "px";
+		// 	document.querySelector(".block-6").style.left = e.pageX / 20 + "px";
+		// 	document.querySelector(".block-7").style.top = e.pageY / 30 + "px";
+		// 	document.querySelector(".block-7").style.left = e.pageX / 30 + "px";
+		// 	document.querySelector(".wrapper-img").classList.toggle('widthscale'); 
+
+		// 	console.log(e.pageX)
+		// })
+
+		// document.querySelector(".layer-white").addEventListener("mouseenter" , function () {
+		// 	document.querySelector(".layer-white").classList.add('white-large')
+		// 	document.querySelector(".layer-white").classList.remove('black-large')
+		// })
+		// document.querySelector(".layer-white").addEventListener("mouseout" , function () {
+		// 	document.querySelector(".layer-white").classList.remove('white-large')
+		// 	document.querySelector(".layer-white").classList.add('black-large')
+		// })
+		document.getElementById('bodyme').oncontextmenu = function () { return false; };
+		const consoleText = `hello my friend  it's mohamed saied from splendux and we are using three.js ;) 
+let's be connected  EMAIL : ` ;
+		const email = 'mohamed.saied.fathallah@gmail.com';
+		console.log(consoleText + '%c' + email, 'color: #009281')
+	</script>
+	<script type="module" src="./index.js"></script>
+
+</body>
+
+</html>
